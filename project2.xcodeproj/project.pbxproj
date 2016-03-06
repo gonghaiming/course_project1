@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2AFEFDD01C857CBF0003D77E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AFEFDCF1C857CBF0003D77E /* main.cpp */; };
+		2AFEFDD71C857CED0003D77E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFEFDD61C857CED0003D77E /* OpenGL.framework */; };
+		2AFEFDD91C857CF30003D77E /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFEFDD81C857CF30003D77E /* GLUT.framework */; };
+		2AFEFDDC1C857DE50003D77E /* Tetris.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AFEFDDA1C857DE50003D77E /* Tetris.cpp */; };
+		2AFEFDE61C857FC90003D77E /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AFEFDE41C857FC90003D77E /* Game.cpp */; };
+		2AFEFDE91C8580550003D77E /* Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AFEFDE71C8580550003D77E /* Block.cpp */; };
+		2AFEFDEC1C87CB750003D77E /* Figure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AFEFDEB1C87CB750003D77E /* Figure.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +29,14 @@
 
 /* Begin PBXFileReference section */
 		2AFEFDCC1C857CBF0003D77E /* project2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = project2; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AFEFDCF1C857CBF0003D77E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2AFEFDD61C857CED0003D77E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		2AFEFDD81C857CF30003D77E /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		2AFEFDDA1C857DE50003D77E /* Tetris.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tetris.cpp; sourceTree = "<group>"; };
+		2AFEFDDB1C857DE50003D77E /* Tetris.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Tetris.hpp; sourceTree = "<group>"; };
+		2AFEFDE41C857FC90003D77E /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		2AFEFDE71C8580550003D77E /* Block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Block.cpp; path = ../Block.cpp; sourceTree = "<group>"; };
+		2AFEFDEA1C85821E0003D77E /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		2AFEFDEB1C87CB750003D77E /* Figure.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Figure.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AFEFDD91C857CF30003D77E /* GLUT.framework in Frameworks */,
+				2AFEFDD71C857CED0003D77E /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +55,8 @@
 		2AFEFDC31C857CBF0003D77E = {
 			isa = PBXGroup;
 			children = (
+				2AFEFDD81C857CF30003D77E /* GLUT.framework */,
+				2AFEFDD61C857CED0003D77E /* OpenGL.framework */,
 				2AFEFDCE1C857CBF0003D77E /* project2 */,
 				2AFEFDCD1C857CBF0003D77E /* Products */,
 			);
@@ -57,7 +73,12 @@
 		2AFEFDCE1C857CBF0003D77E /* project2 */ = {
 			isa = PBXGroup;
 			children = (
-				2AFEFDCF1C857CBF0003D77E /* main.cpp */,
+				2AFEFDE71C8580550003D77E /* Block.cpp */,
+				2AFEFDDA1C857DE50003D77E /* Tetris.cpp */,
+				2AFEFDEB1C87CB750003D77E /* Figure.cpp */,
+				2AFEFDE41C857FC90003D77E /* Game.cpp */,
+				2AFEFDEA1C85821E0003D77E /* Common.h */,
+				2AFEFDDB1C857DE50003D77E /* Tetris.hpp */,
 			);
 			path = project2;
 			sourceTree = "<group>";
@@ -118,7 +139,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AFEFDD01C857CBF0003D77E /* main.cpp in Sources */,
+				2AFEFDDC1C857DE50003D77E /* Tetris.cpp in Sources */,
+				2AFEFDEC1C87CB750003D77E /* Figure.cpp in Sources */,
+				2AFEFDE91C8580550003D77E /* Block.cpp in Sources */,
+				2AFEFDE61C857FC90003D77E /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +261,7 @@
 				2AFEFDD51C857CBF0003D77E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
